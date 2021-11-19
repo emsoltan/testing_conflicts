@@ -47,7 +47,7 @@ margin-top:5rem;
       to right bottom,
       rgba(0, 1, 17, 0.6),
       rgba(0, 1, 17, 0.61)
-    ), url("../../assets/gmp-msk-header3.jpg");
+    );
   /*to style a background-gradient we use the background-image property, we declare the gradient before declaring the background image*/
   background-size: cover;
   /* background-repeat: repeat; */

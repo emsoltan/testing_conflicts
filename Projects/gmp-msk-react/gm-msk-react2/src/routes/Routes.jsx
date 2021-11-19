@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes as Switch,
   Route,
 } from "react-router-dom";
@@ -15,6 +15,7 @@ import Album from "../components/pages/album/Album";
 import Account from "../components/pages/account/Account";
 import Cart from "../components/pages/cart/Cart";
 import LoginForm from "../components/pages/account/loginform/LoginForm";
+import LoginCheck from "../components/pages/account/loginform/LoginCheck";
 const Routes = () => {
   return (
     <MyProvider>
@@ -23,8 +24,11 @@ const Routes = () => {
         <Switch>
           <Route path="/" element={<Home />} className={classes.section_view} />
           <Route path="/about" element={<About />} />
-          <Route path="/library" element={<Library />} ><Route path="*/album" element={<Album/>}/></Route>
-          <Route path="/login" element ={<LoginForm/>}/>
+          <Route path="/library/*" element={<Library />}>
+            <Route path="album" element={<Album />} />
+          </Route>
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/logincheck" element={<LoginCheck />} />
           <Route path="/account" element={<Account />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/album" element={<Album />} />

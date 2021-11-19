@@ -7,7 +7,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 1, 17, 0.6),
+      rgba(0, 1, 17, 0.61)
+    ), url("../../../assets/gmp-msk-header3.jpg");
+  background-size: cover;
+  background-position:center;
 }
+
 .text_box {
   position: absolute;
   top: 50%;

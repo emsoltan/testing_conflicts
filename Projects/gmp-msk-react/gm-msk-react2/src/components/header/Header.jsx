@@ -13,9 +13,9 @@ const Header = () => {
   //    !auth ? <LoginForm /> : <Account />;
   //  };
 
-   useEffect(() => {
-     auth && navigate("/account", { replace: true });
-   }, [auth, navigate]);
+  //  useEffect(() => {
+  //    !auth && navigate("/", { replace: true });
+  //  }, [auth, navigate]);
     return (
       <header className="header">
         <div className="logobox">

@@ -1,12 +1,15 @@
 import React, { useContext } from "react";
 import MyContext from "../../../../context/MyContext";
-import "./LoginForm.css"
-import "./LoginModal.css"
-import classes from "../../../ui/UI.module.css"
+import { useNavigate } from "react-router-dom";
+import "./LoginForm.css";
+import "./LoginModal.css";
+import classes from "../../../ui/UI.module.css";
+
 const LoginForm = () => {
   const context = useContext(MyContext);
   const { form, handleFormInput, handleFormSubmit, auth } = context;
   const { user, password } = form;
+  const navigate = useNavigate()
   const logged = !auth && (
     <div className="login_view">
       <div className="login_modal">
@@ -27,13 +30,20 @@ const LoginForm = () => {
             placeholder="Password"
             className="form-input"
           />
-          <button className="form-button" onClick={(e) => handleFormSubmit(e)}>
+          <button
+            className="form-button"
+            onClick={(e) => {
+              handleFormSubmit(e);
+              navigate("/logincheck");
+            }}
+          >
             Login
           </button>
         </form>
       </div>
     </div>
-  ); 
+  );
+
   return logged;
 };
 export default LoginForm;

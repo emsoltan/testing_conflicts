@@ -12,19 +12,17 @@ const Account = () => {
   const context = useContext(MyContext);
   const { auth } = context;
   const navigate = useNavigate();
- const accountView = (auth) => {
-     !auth ? <LoginForm/> : <Profile/>
- }
+
 
   useEffect(() => {
-    auth && navigate("/account", { replace: true });
+    !auth && navigate("/", { replace: true });
   }, [auth, navigate]);
 
   return (
     <div className={classes.section_view}>
       <div className="account">
         {/* <h4>Account</h4> */}
-        {!auth && <LoginForm /> }
+        {!auth ? <LoginForm /> : <Profile />}
       </div>
     </div>
   );

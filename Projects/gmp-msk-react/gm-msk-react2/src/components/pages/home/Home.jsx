@@ -9,11 +9,9 @@ import MyContext from "../../../context/MyContext"
 import  "./Home.css"
 const Home = () => {
   const context = useContext(MyContext)
-  const navigate = useNavigate()
-  const {auth }= context
-   useEffect(() => {
-     auth && navigate("/", { replace: true });
-   }, [auth, navigate]);
+  // const navigate = useNavigate()
+  // const {auth }= context
+
   return (
     <>
       <div className={classes.section_view}>
@@ -32,7 +30,7 @@ const Home = () => {
       </div>
       <About />
       <Library />
-      <Account />
+      {/* <Account /> */}
     </>
   );
 };
