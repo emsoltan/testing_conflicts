@@ -1,21 +1,20 @@
 const siteData = [
   {
     albumArt: [
-        "https://f4.bcbits.com/img/a2139857345_16.jpg",
+      { image: "https://f4.bcbits.com/img/a3900475499_16.jpg" },
+      { image: "https://f4.bcbits.com/img/a2139857345_16.jpg" },
       "https://f4.bcbits.com/img/a4170389359_10.jpg",
-      "https://f4.bcbits.com/img/a1224753393_10.jpg",
-      
     ],
     releases: [
       {
         albumName: "Journey to the Centre of the Earth",
         url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
-        image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
+        image: "https://f4.bcbits.com/img/a3900475499_16.jpg",
       },
       {
         albumName: "Cromasome",
         url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
-        image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
+        image: "https://f4.bcbits.com/img/a2139857345_16.jpg",
       },
       {
         albumName: "Journey to the Centre of the Earth",
@@ -28,14 +27,14 @@ const siteData = [
         image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
       },
       {
-        albumName: "Journey to the Centre of the Earth",
-        url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
-        image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
+          albumName: "Journey to the Centre of the Earth",
+          url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
+          image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
       },
       {
-        albumName: "Journey to the Centre of the Earth2222222",
-        url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
-        image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
+          albumName: "Journey to the Centre of the Earth2222222",
+          url: "https://gmpmsk.bandcamp.com/album/journey-to-the-centre-of-the-earth",
+          image: "https://f4.bcbits.com/img/a4170389359_10.jpg",
       },
     ],
   },

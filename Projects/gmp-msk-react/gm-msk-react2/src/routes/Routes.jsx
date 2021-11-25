@@ -5,7 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import MyProvider from "../context/MyProvider";
-import classes from "../components/ui/UI.module.css";
+import "../components/ui/UI.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Home from "../components/pages/home/Home";
@@ -22,7 +22,7 @@ const Routes = () => {
       <Router className="containerbanner">
         <Header />
         <Switch>
-          <Route path="/" element={<Home />} className={classes.section_view} />
+          <Route path="/" element={<Home />}  />
           <Route path="/about" element={<About />} />
           <Route path="/library/*" element={<Library />}>
             <Route path="album" element={<Album />} />

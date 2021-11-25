@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import classes from "../../ui/UI.module.css";
+import "../../ui/UI.css";
 import "./Account.css";
 import LoginForm from "./loginform/LoginForm";
 import Profile from "./Profile"
@@ -19,7 +19,7 @@ const Account = () => {
   }, [auth, navigate]);
 
   return (
-    <div className={classes.section_view}>
+    <div className="section_view">
       <div className="account">
         {/* <h4>Account</h4> */}
         {!auth ? <LoginForm /> : <Profile />}

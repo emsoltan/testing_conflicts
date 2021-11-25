@@ -1,6 +1,6 @@
 import React , {useEffect, useContext} from "react";
 // import classes from "../../ui/UI.module.css";
-import classes from "../../ui/UI.module.css"
+import  "../../ui/UI.css"
 import { Link, useNavigate } from "react-router-dom";
 import Library from "../../pages/library/Library"
 import About from "../../pages/about/About"
@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <div className={classes.section_view}>
+      <div className="section_view">
         <div className="home_view">
           <div className="text_box">
             <h1 className="heading_primary">

@@ -7,11 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 1, 17, 0.6),
-      rgba(0, 1, 17, 0.61)
-    ), url("../../../assets/gmp-msk-header3.jpg");
+  background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.383),
+    rgba(0, 1, 17, 0.877)
+  ), url("../../../assets/about2.jpg");
   background-size: cover;
   background-position:center;
 }

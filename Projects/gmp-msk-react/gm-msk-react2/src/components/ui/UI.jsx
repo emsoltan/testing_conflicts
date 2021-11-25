@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./UI.module.css";
+import  "./UI.css";
 const UI = (props) => {
-  return <main className={classes.main}>{props.children}</main>;
+  return <main className="main">{props.children}</main>;
 };
 
 export default UI;

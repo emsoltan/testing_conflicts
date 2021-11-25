@@ -11,12 +11,16 @@ const Library = () => {
 
   const albumArt = siteData[0].albumArt
   // const albumImage = albumArt.map(item=>item)
-  const albumImage = function (albumArt){
-    for (let i = 0; i < siteData[i].albumArt.length; i++) {
-      return <img src={siteData[i].albumArt[i]} />
+  const art = siteData[0].albumArt
+  const albumImage = function (){
+    for (let i = 0; i < art.length; i++) {
+      // return siteData[0].releases[i].image;
+    console.log(art[i].image);
+      return <img src={art[i].image} />;
    
     }
   }
+  console.log()
   // albumImage()
  
   const deleteHandler = () => {
@@ -40,7 +44,7 @@ const Library = () => {
   return (
     
       <div className="library_view">
-        <h2>Beats Library</h2>
+        <h2 className="library_title">Beats Library</h2>
       <ul className="album_view">{getAlbum}</ul>
     
         {modal && (
